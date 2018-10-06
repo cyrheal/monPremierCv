@@ -4,6 +4,8 @@
 }
 #bluec{
   background-color: #16A086;
+  padding-bottom: 4%;
+
 }
 #yellow{
   background-color: #F39C11;
@@ -20,11 +22,43 @@
   background-color: #08000a;
 }
 .emoji{
-  padding-top: 5%;
-   padding-bottom: 5%;
-   padding-left: 10%;
-  width: 50%;
+  padding-top: 2%;
+   padding-bottom: 2%;
+   padding-left: 30%;
+  width: 65%;
 }
 .align{
   text-align: center;
+  padding-top: 4%;
+   padding-left: 4%;
+  width: 95%;
 }
+.address{
+  padding-top: 8%;
+   padding-left: 30%;
+  width: 95%;
+}
+.development{
+  text-align: center;
+  padding-top: 2%;
+}
+/* Début progresse barre test */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding: 2%; /* Add some padding */
+    color: white; /* White text color */
+}
+
+.html {width: 70%; background-color: #4CAF50;} /* Green */
+.css {width: 50%; background-color: #2196F3;} /* Blue */
+.js {width: 20%; background-color: #f44336;} /* Red */
+.php {width: 10%; background-color: #808080;} /* Dark Grey */
+/* fin test progresse barre */

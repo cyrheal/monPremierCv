@@ -54,14 +54,32 @@
 .logohtml{
   width: 10%;
 }
-.motivé{
-    width: 25%;
+.logocss{
+  width: 10%;
+}
+.logoangularJs{
+width: 10%;
+}
+.logojs{
+  width: 10%;
+}
+.logophp{
+  width: 10%;
+}
+.logobootstrap{
+  width: 10%;
+}
+.ampoule{
+  width: 3%;
+}
+.optimiste{
+    width: 15%;
 }
 .esprit{
-  width: 40%;
+  width: 30%;
 }
 .persévérant{
-  width: 20%;
+  width: 16%;
 }
 .diplômes{
   width: 20%;
@@ -69,7 +87,7 @@
 .rouage{
 width: 10%;
 }
-.ampoule{
+.experience{
   width: 8%;
 }
 /* Début progresse barre test */
@@ -79,6 +97,7 @@ width: 10%;
 .container {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
+  padding-left: 0px !important;
 }
 
 .skills {
@@ -87,8 +106,10 @@ width: 10%;
   color: white; /* White text color */
 }
 
-.html {width: 70%; background-color: #4CAF50;} /* Green */
-.css {width: 50%; background-color: #2196F3;} /* Blue */
-.js {width: 20%; background-color: #f44336;} /* Red */
-.php {width: 10%; background-color: #808080;} /* Dark Grey */
+.html {width: 70%; background-color: #f16529;} /* Green #4CAF50 */
+.css {width: 50%; background-color: #369cd6;} /* Blue #2196F3 */
+.js {width: 20%; background-color: #efc725;} /* Red #f44336*/
+.php {width: 10%; background-color: #777bb3;} /* Dark Grey #808080 */
+.angularJs {width: 30%; background-color: #c3002f;}
+.bootstrap {width: 50%; background-color: #583c80;}
 /* fin test progresse barre */

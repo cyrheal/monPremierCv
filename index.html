@@ -1,117 +1,161 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Mon cv</title>
-  <link rel="stylesheet" type="text/css" href="css/stylecv.css">
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-</head>
-<body>
-  <div class="container-fluid">
-    <div class="row" id="grey">
-      <!-- container grey-->
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12">
-        <img class="emoji" img src="image/emoji1.png" alt="Photo emoji">
-        <div class="naissance">30/05/1986</div>
-      </div>
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12">
-        <h1 class="align">Simonot Cyril</h1>
-        <h1 class="align"><strong>Developpeur web junior</strong></h1>
-      </div>
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12">
-        <ul class="address">
-          <li>14 rue Pépin le Bref</li>
-          <li>02200 Soissons</li>
-          <li><img class="téléphone" src="image/téléphone.svg" alt="photo téléphone">06.70.14.25.61</li>
-          <li><img class="email" src="image/email.svg" alt="photo email"> <a href="mailto:cyrilsimonot@yahoo.fr">cyrilsimonot@yahoo.fr</a></li>
-        </ul>
-        <input type="image" src="image/github.png" class="github" name="github" onclick="github()">
-        <input type="image" src="image/LinkedIn.png" class="linkedIn" name="linkedIn" onclick="linkedIn()">
-      <!--  <a href="https://www.linkedin.com/in/cyril-simonot-807ab516b/"><img class="linkedIn" src="image/LinkedIn.png" alt="logo LinkedIn"></a>-->
-
-      </div>
-    </div>
-    <!-- container bluec changer les col si il y a plusieurs blocs-->
-    <div class="row">
-      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 development devBlue">
-        <h1><img class="ampoule" img src="image/ampoule.svg" alt="Photo ampoule"> <strong>Développement</strong></h1>
-      </div>
-      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 devBlueLight">
-        <h1 class="qualité"> Qualité</h1>
-      </div>
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12 devBlue">
-        <img class="logohtml" img src="image/logo-html5.png" alt="Photo html"><strong>HTML</strong>
-        <div class="container">
-          <div class="skills html">70%</div>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/stylecv.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <title>Mon cv</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="grey">
+                <!-- container grey-->
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <img class="emoji" src="image/emoji1.png" alt="Photo emoji"/>
+                    <div class="naissance">30/05/1986</div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="align">Simonot Cyril</h1>
+                    <h1 class="align"><strong>Developpeur web junior</strong></h1>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="address">
+                        <li>14 rue Pépin le Bref</li>
+                        <li>02200 Soissons</li>
+                        <li><img class="téléphone" src="image/téléphone.svg" alt="photo téléphone"/>06.70.14.25.61</li>
+                        <li><img class="email" src="image/email.svg" alt="photo email"/> <a href="mailto:cyrilsimonot@yahoo.fr">cyrilsimonot@yahoo.fr</a></li>
+                    </ul>
+                    <div class="row">
+                        <p class="linkedInMargin"><a href="https://www.linkedin.com/in/cyril-simonot-807ab516b/" target="_blank"><img class="linkedIn"  src="image/LinkedIn.png" alt="LinkedIn"/></a></p>
+                        <p class="githubMargin"><a href="https://github.com/cyrheal" target="_blank"><img class="github" src="image/github.png" alt="github"/></a></p>
+                    </div>
+                    <!-- bouton essai <input type="image" src="image/github.png" class="github" name="github" onclick="github()">
+                    <input type="image" src="image/LinkedIn.png" class="linkedIn" name="linkedIn" onclick="linkedIn()">
+                    <a href="https://www.linkedin.com/in/cyril-simonot-807ab516b/"><img class="linkedIn" src="image/LinkedIn.png" alt="logo LinkedIn"></a>-->
+                </div>
+            </div>
+            <div class="row"><!-- raw compétences + raw qualités-->
+                <!-- début de la row compétence devblue -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center devBlue">
+                    <p><img class="ampoule" src="image/ampoule.svg" alt="Photo ampoule"/><span class="dev">Compétences</span></p><!--dévelopement changer en compétence-->
+                    <div class="row"><!-- début raw progress bar-->
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "><!-- ouverture de la div row 1er colonne -->
+                            <div class="row">
+                                <p class="mt-2"> <img class="logohtml" src="image/logo-html5.png" alt="Photo html"/><span class="CompBold">HTML</span></p>
+                                <div class="skillBar">
+                                    <div class="skills html">70%</div>
+                                </div>
+                            </div>
+                            <div class="row">                                                                    <!-- augmente la taille de police -->
+                                <p class="mt-2"><img class="logojs" src="image/logo-js.png" alt="Photo js"/><span class="CompBold">JS</span></p>
+                                <div class="skillBar">
+                                    <div class="skills js">20%</div>
+                                </div>
+                            </div>
+                            <div class="row"> <!-- A entourer tout tes éléments d'une DIV row -->
+                                <p class="mt-2"><img class="logobootstrap" src="image/bootstrap.png" alt="Photo bootstrap"/><span class="CompBold">bootstrap</span></p>
+                                <div class="skillBar">
+                                    <div class="skills bootstrap">50%</div>
+                                </div>
+                            </div>
+                            <div class="row"> <!-- A entourer tout tes éléments d'une DIV row -->
+                                <p class="mt-2"><img class="logoatom" src="image/atom.png" alt="Photo atom"/><span class="CompBold">atom</span></p>
+                                <div class="skillBar">
+                                    <div class="skills atom">50%</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="mt-2"><img class="logonetbeans" src="image/netbeans.png" alt="Photo netbeans"/><span class="CompBold">netbeans</span></p>
+                                <div class="skillBar">
+                                    <div class="skills netbeans">50%</div>
+                                </div>
+                            </div>
+                        </div>  <!-- Fermeture de la div row 1er colonne -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "><!-- début de la 2ème colonne-->
+                            <div class="row">
+                                <p class="mt-2"><img class="logocss" src="image/logo-css3.png" alt="Photo css"/><span class="CompBold">CSS</span></p>
+                                <div class="skillBar">
+                                    <div class="skills css">50%</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="mt-2"><img class="logophp" src="image/logo-php.png" alt="Photo php"/><span class="CompBold">PHP</span></p>
+                                <div class="skillBar">
+                                    <div class="skills php">50%</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="mt-2"><img class="logoangularJs" src="image/angular.png" alt="Photo angular"/><span class="CompBold">angular JS</span></p>
+                                <div class="skillBar">
+                                    <div class="skills angularJs">30%</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="mt-2"><img class="logoangularJs" src="image/mysql.png" alt="Photo angular"/><span class="CompBold">mysql</span></p>
+                                <div class="skillBar">
+                                    <div class="skills mysql">50%</div><!--mysql changement de couleur-->
+                                </div>
+                            </div>
+                        </div><!-- fin de la 2ème colonne-->
+                    </div><!-- fin de la raw progress bar-->
+                </div><!-- fin de la row compétence devblue -->
+                <!--début de la raw qualités-->
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 devBlueLight">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h1 class="qualité"> Qualités</h1>
+                    </div><!-- celpadding = espace entre les qualités-->
+                    <table cellpadding="20" class="tablequalité"><!--border="5"-->
+                        <tr>                                                                       <!-- mettre margin-left à l icone-->
+                            <!--mettre une  classe image-->  <td style="width: 40%;"><img class="persévérant" src="image/persévérant1.svg" alt="Photo persévérant"/></td>
+                            <!--mettre une  classe mot-->   <td style="width: 60%;" class="quality"> Persévérant</td><!--font-size: 25px; font-weight: bold;"-->
+                        </tr>
+                        <tr>
+                            <td><img class="optimiste" src="image/optimiste.svg" alt="Photo motivé"/></td>
+                            <td class="quality">Optimiste</td>
+                        </tr>
+                        <tr>
+                            <td><img class="esprit" src="image/esprit.svg" alt="Photo esprit"/></td>
+                            <td class="quality">Esprit d'équipe</td>
+                        </tr>
+                    </table>
+                </div><!-- fin de la raw qualités-->
+            </div><!-- fin de la raw compétences + raw qualités-->
+            <!--ligne des 3 blocs, jaune rouge bleu-->
+            <div class="row">
+                <div class="col-lg-4 col-md-12col-sm-12 col-xs-12" id="yellow">
+                    <h1><img class="diplômes" src="image/diplômes.svg" alt="Photo diplômes"/> <strong>Diplômes</strong></h1>
+                    <ul>
+                        <li>2018 – Préparation au titre professionnel (niveau 3) de <strong>développeur web / web mobile</strong>.</li>
+                        <li>2017 - Obtention du titre professionnel de <strong>préparateur de commandes en entrepôt</strong>.</li>
+                        <li>2007 - Niveau <strong>BTS mécanique et automatismes industriels</strong> -Lycée Léonard de Vinci</li>
+                        <li>2005 - Obtention du <strong>Bac STI électronique</strong> avec mention - Lycée Léonard de Vinci</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12col-sm-12  col-xs-12" id="red">
+                    <h1><img class="experience" src="image/experience.svg" alt="Photo experience"/> <strong>Expériences</strong></h1>
+                    <ul>
+                        <li>Septembre 2018 - <strong>Apprenant</strong> à La Manu, l'école des métiers du numérique de Soissons pendant 6 mois.</li>
+                        <li>2008-2018 - <strong>Préparateur de commandes</strong> - nombreuses missions en intérim - Kuehne Nagel à Villeuve-St-Germain</li>
+                        <li>De juillet 2014 à décembre 2015 - <strong>Préparateur de commandes</strong> - Mission de 18 mois - Orexad à Ploisy</li>
+                        <li>Juillet/août 2004 et 2005 - <strong>Aide bobineur</strong> (job d'été) pour la Rochette à Venizel</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12col-sm-12 col-xs-12" id="blueb">
+                    <h1><img class="rouage" src="image/rouage.svg" alt="Photo rouage"/> <strong>Outils</strong></h1><!--compétence-->
+                    <ul>
+                        <li><img class="logoterminal" src="image/terminal.png" alt="Photo terminal"/><span class="CompBold">terminal</span></li>
+                        <li><img class="logoubuntu" src="image/ubuntu.png" alt="Photo ubuntu"/><span class="CompBold">ubuntu</span></li>
+                        <li><img class="logowindows" src="image/windows.png" alt="Photo windows"/><span class="CompBold">windows</span></li>
+                        <li><img class="logolinux" src="image/linux.png" alt="Photo linux"/><span class="CompBold">linux</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--ligne black changer les col si il y a plusieurs blocs-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="black">
+                </div>
+            </div>
         </div>
-        <img class="logocss" img src="image/logo-css3.png" alt="Photo css"><strong>css</strong>
-        <div class="container">
-          <div class="skills css">50%</div>
-        </div>
-        <img class="logobootstrap" img src="image/bootstrap.png" alt="Photo bootstrap"><strong>Bootstrap</strong>
-        <div class="container">
-          <div class="skills bootstrap">50%</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12 devBlue">
-        <img class="logojs" img src="image/logo-js.png" alt="Photo js"><strong>js</strong>
-        <div class="container">
-          <div class="skills js">20%</div>
-        </div>
-        <img class="logophp" img src="image/logo-php.png" alt="Photo php"><strong>php</strong>
-        <div class="container">
-          <div class="skills php">10%</div>
-        </div>
-        <img class="logoangularJs" img src="image/angular.png" alt="Photo angular"><strong>angular js</strong>
-        <div class="container">
-          <div class="skills angularJs">30%</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12 devBlueLight">
-        <ul class="quality">
-          <li><img class="persévérant" img src="image/persévérant1.svg" alt="Photo persévérant">persévérant</li>
-          <li><img class="optimiste" img src="image/optimiste.svg" alt="Photo motivé">optimiste</li>
-          <li><img class="esprit" img src="image/esprit.svg" alt="Photo esprit">esprit d'équipe</li>
-        </ul>
-      </div>
-    </div>
-    <!--ligne des 3 blocs-->
-    <div class="row">
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12" id="yellow">
-        <h1><img class="diplômes" img src="image/diplômes.svg" alt="Photo diplômes"> <strong>Diplômes</strong></h1>
-        <ul>
-          <li>2018 – Préparation au titre professionnel (niveau 3) de <strong>développeur web / web mobile</strong>.</li>
-          <li>2017 - Titre professionnel de <strong>préparateur de commandes en entrepôt</strong>.</li>
-          <li>2007 - Niveau <strong>BTS mécanique et automatismes industriels</strong> -Lycée Léonard de Vinci</li>
-          <li>2005 - Obtention du <strong>Bac STI électronique</strong> avec mention - Lycée Léonard de Vinci</li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-12col-sm-12  col-xs-12" id="red">
-        <h1><img class="experience" img src="image/experience.svg" alt="Photo experience"> <strong>Expériences</strong></h1>
-        <ul>
-          <li>Septembre 2018 - <strong>Apprenant</strong> à La Manu, l'école des métiers du numérique de Soissons pendant 6 mois.</li>
-          <li>2008-2018 - <strong>Préparateur de commandes</strong> - nombreuses missions en intérim - Kuehne Nagel à Villeuve-St-Germain</li>
-          <li>De juillet 2014 à décembre 2015 - <strong>Préparateur de commandes</strong> - Mission de 18 mois - Orexad à Ploisy</li>
-          <li>Juillet/août 2004 et 2005 - <strong>Aide bobineur</strong> (job d'été) pour la Rochette à Venizel</li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-12col-sm-12 col-xs-12" id="blueb">
-        <h1><img class="rouage" img src="image/rouage.svg" alt="Photo rouage"> <strong>Compétences</strong></h1>
-        <ul>
-          <li>atom</li>
-          <li>terminal</li>
-          <li>ubuntu</li>
-          <li>windows</li>
-          <li>linux</li>
-        </ul>
-      </div>
-    </div>
-    <!--ligne black changer les col si il y a plusieurs blocs-->
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="black">
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="js/javacv.js"></script>
-</body>
+        <script type="text/javascript" src="js/javacv.js"></script>
+    </body>
 </html>
